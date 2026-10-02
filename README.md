@@ -11,8 +11,6 @@ This is a personal learning project, not a production-ready service.
 
 ![Local architecture](docs/diagrams/local.png)
 
-*Add your diagram at `docs/diagrams/local.png` and uncomment the image above.*
-
 Nginx serves the frontend and forwards API requests to the backend. The backend
 stores original images in MinIO, saves records in PostgreSQL, and sends jobs to
 Redis. A Python worker creates thumbnails, stores them in MinIO, and updates
@@ -64,9 +62,7 @@ Your source files and `.env` are not deleted.
 
 ## AWS architecture
 
-<!-- ![AWS architecture](docs/diagrams/aws.png) -->
-
-*Add your diagram at `docs/diagrams/aws.png` and uncomment the image above.*
+![AWS architecture](docs/diagrams/aws.png)
 
 CloudFront serves the frontend from a private S3 bucket and forwards
 `/api/*` requests to an Application Load Balancer. The ALB forwards them
