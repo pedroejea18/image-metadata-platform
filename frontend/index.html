@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload image</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Upload image</h1>
+    <form id="upload-form">
+      <input type="file" id="image-file" accept="image/*" required />
+      <button type="submit">Upload image</button>
+    </form>
+
+    <section id="status-panel" class="hidden">
+      <h2>Processing status</h2>
+      <p id="status-text">Waiting...</p>
+      <div class="progress" id="progress-bar"></div>
+    </section>
+
+    <section id="result-panel" class="hidden">
+      <h2>Result</h2>
+      <button id="thumbnail-button" class="thumbnail-button" type="button" aria-label="View original image">
+        <img id="result-image" alt="Processed image thumbnail" />
+      </button>
+      <p class="image-hint">Click the thumbnail to view the original image.</p>
+      <div id="result-info"></div>
+    </section>
+  </main>
+
+  <div id="image-modal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Original image">
+    <button id="modal-close" class="modal-close" type="button" aria-label="Close">&times;</button>
+    <img id="original-image" alt="Full-size original image" />
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Use unique bucket names for a new deployment.
+# Keep the current names for an existing deployment.
+project_name         = "image-metadata-project"
+images_bucket_name   = "image-metadata-files-your-suffix"
+frontend_bucket_name = "front-image-metadata-your-suffix"
+
+# Push the images to ECR before running a full plan or apply.
+backend_image_tag = "latest"
+worker_image_tag  = "latest"

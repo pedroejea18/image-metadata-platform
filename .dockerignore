@@ -1,0 +1,12 @@
+.git
+.agents
+.codex
+.aws
+.venv
+.env
+.env.*
+**/__pycache__
+**/*.pyc
+terraform
+tests
+docs

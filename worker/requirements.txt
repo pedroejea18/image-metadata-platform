@@ -1,0 +1,6 @@
+redis
+psycopg2-binary
+pillow
+minio
+boto3
+botocore

@@ -1,0 +1,12 @@
+FROM python:3.13-slim
+
+WORKDIR /app
+ENV PYTHONUNBUFFERED=1 APP_ENV=local
+
+COPY worker/requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY common ./common
+COPY worker/app ./app
+
+CMD ["python", "-m", "app.local"]
