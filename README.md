@@ -9,7 +9,7 @@ This is a personal learning project, not a production-ready service.
 
 ## Local architecture
 
-<!-- ![Local architecture](docs/diagrams/local.png) -->
+![Local architecture](docs/diagrams/local.png)
 
 *Add your diagram at `docs/diagrams/local.png` and uncomment the image above.*
 
